@@ -16,7 +16,7 @@ body {
 
 #page-wrapper {
   background-color: white;
-  width: 768px;
+  max-width: 960px;
   margin: 0 auto;
 }
 
@@ -24,6 +24,7 @@ body {
   background-color: #f7f2da;
   padding: 0 1em 0 1em;
   margin-bottom: 10px;
+  width: 625px;
 }
 
 nav {
@@ -41,7 +42,19 @@ footer {
   clear: both;
 }
 
-/* ----- Left-Sided Nav Menu -----*/
+/* ----- Ad Styling -----*/
+
+.wide-skyscraper-ad {
+  width: 160px;
+  height: 600px;
+  background-color: silver;
+}
+
+/* ----- Three-Column Fixed Layout -----*/
+
+#page-wrapper {
+  width: 960px;
+}
 
 nav {
   float: left;
@@ -54,5 +67,11 @@ nav {
   float: left;
   width: 593px;
   -moz- box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#sidebar {
+  float: left;
+  width: 160px;
   box-sizing: border-box;
 }
