@@ -50,22 +50,29 @@ footer {
   background-color: silver;
 }
 
-/* ----- Three-Column Fixed Layout -----*/
+/* ----- One-Column Mobile Layout -----*/
 
-#page-wrapper {
-  width: 960px;
+#fluid-columns, nav, #content, #sidebar {
+  width: 100%;
+}
+
+/* ----- Two-Column Fluid Layout -----*/
+
+@media all and (Min-width: 525px) {
+ #page-wrapper {
+  width: 100%;
 }
 
 nav {
   float: left;
-  width: 175px;
+  width: 18.229%;
   -moz- box-sizing: border-box;
   box-sizing: border-box;
 }
 
 #content {
   float: left;
-  width: 593px;
+  width: 78.125%;
   -moz- box-sizing: border-box;
   box-sizing: border-box;
 }
@@ -74,4 +81,14 @@ nav {
   float: left;
   width: 160px;
   box-sizing: border-box;
+}
+}
+
+@media all and (min-width:960px) {
+  #page-wrapper {
+  width: 960px;
+}
+  #fluid-columns {
+  width: 800px;
+}
 }
